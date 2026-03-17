@@ -25,7 +25,7 @@ export default function EmployeeTable({ employees, selectedEmployeeId, onSelectE
           </thead>
           <tbody className="divide-y divide-slate-50">
             {employees.map((employee) => {
-              // CRITICAL: We check against employee_id (the string "004")
+          
               const isSelected = employee.employee_id === selectedEmployeeId;
               
               return (
