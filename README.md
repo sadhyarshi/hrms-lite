@@ -47,41 +47,6 @@ The system is split into two parts:
 | Tailwind CSS | Utility-first styling |
 | Axios | HTTP client for API calls |
 
----
-
-## Project Structure
-
-```
-HRMS/
-├── backend/
-│   ├── main.py                  # App setup, middleware, dashboard & health routes
-│   ├── employee_routes.py       # All /employees routes
-│   ├── attendance_routes.py     # All /attendance routes
-│   ├── models.py                # SQLAlchemy database models
-│   ├── schemas.py               # Pydantic request/response schemas
-│   ├── database.py              # Database connection setup
-│   ├── requirements.txt         # Python dependencies
-│   ├── .env                     # Environment variables (not committed)
-│   └── .env.example             # Environment variable template
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── EmployeeForm.jsx      # Add employee form
-│   │   │   ├── EmployeeList.jsx      # Employee table with delete, attendance & present days
-│   │   │   └── Attendance.jsx        # Mark attendance component
-│   │   ├── services/
-│   │   │   └── api.js                # Axios API calls
-│   │   ├── App.jsx                   # Root component with dashboard
-│   │   └── main.jsx                  # React entry point
-│   ├── index.html
-│   ├── vite.config.js
-│   └── package.json
-├── .gitignore
-└── README.md
-```
-
----
 
 ## Getting Started
 
